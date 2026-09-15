@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZENN | Luxury Fashion House</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts (Cinzel for Luxury Brand Headings & Montserrat for Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com" rel="stylesheet">
+    
+    <!-- FontAwesome Fonts for Icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+    <!-- Promo Banner Bar -->
+    <div class="announcement-bar">
+        <p>ZENN AUTUMN SELECTION 2026 • COMPLIMENTARY EXPRESS SHIPPING OVER $200</p>
+    </div>
+
+    <!-- Navigation Hub -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">ZENN</div>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link active">Collections</a></li>
+                <li><a href="#shop" class="nav-link">New Arrivals</a></li>
+                <li><a href="#about" class="nav-link">The House</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="icon-btn" id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="icon-btn" id="cartBtn">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Interactive Search Bar Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <button class="close-search" id="closeSearch"><i class="fa-solid fa-xmark"></i></button>
+        <div class="search-box">
+            <input type="text" placeholder="SEARCH ZENN COLLECTIONS...">
+            <button class="search-go"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Cinematic Stage (Hero) -->
+    <header class="hero-stage">
+        <div class="hero-image-wrapper">
+            <!-- Unsplash Standard Placeholder Image for Haute Couture -->
+            <img src="https://unsplash.com" alt="Runway Haute Couture">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-body">
+            <p class="hero-subtitle">ZENN LA CAPSULE 2026</p>
+            <h1 class="hero-title">SILHOUETTES OF MODERNITY</h1>
+            <p class="hero-description">An elite orchestration of structural tailoring, premium fabrics, and timeless minimalist aesthetics designed for modern expression.</p>
+            <a href="#shop" class="hero-cta">EXPLORE THE EDIT</a>
+        </div>
+    </header>
+
+    <!-- Brand Philosophy Section -->
+    <section class="philosophy-section" id="about">
+        <div class="philosophy-content">
+            <span>THE MANIFESTO</span>
+            <h2>"Simplicity is the ultimate sophistication."</h2>
+            <p>ZENN operates at the intersection of architectural structure and fluid movement. Every garment is crafted with zero-waste patterns, utilizing certified organic linen, pure silk, and Italian-milled merino wool. We believe in creating a legacy, not chasing trends.</p>
+        </div>
+    </section>
+
+    <!-- Dynamic Premium Marketplace -->
+    <main class="store-container" id="shop">
+        <div class="store-header">
+            <h2>THE CURRENT CATALOG</h2>
+            <p>Select your sizes and add luxury essentials to your capsule system</p>
+        </div>
+
+        <div class="product-showcase-grid">
+            
+            <!-- 🛍️ PRODUCT ITEM 1 -->
+            <div class="premium-card" data-id="z1" data-name="Sartorial Wool Trench" data-price="340.00">
+                <div class="card-media">
+                    <img src="https://unsplash.com" alt="Sartorial Wool Trench">
+                    <span class="badge premium">NEW</span>
+                </div>
+                <div class="card-details">
+                    <h3 class="product-title">Sartorial Wool Trench</h3>
+                    <p class="product-category">Outerwear</p>
+                    <p class="product-price">$340.00</p>
+                    
+                    <div class="size-selector">
+                        <span class="size-label">Size:</span>
+                        <button class="size-opt active">S</button>
+                        <button class="size-opt">M</button>
+                        <button class="size-opt">L</button>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-plus"></i> ADD TO CART</button>
+                </div>
+            </div>
+
+            <!-- 🛍️ PRODUCT ITEM 2 -->
+            <div class="premium-card" data-id="z2" data-name="Monochrome Pleated Gown" data-price="490.00">
+                <div class="card-media">
+                    <img src="https://unsplash.com" alt="Monochrome Pleated Gown">
+                    <span class="badge boutique">RUNWAY</span>
+                </div>
+                <div class="card-details">
+                    <h3 class="product-title">Monochrome Pleated Gown</h3>
+                    <p class="product-category">Dresses</p>
+                    <p class="product-price">$490.00</p>
+                    
+                    <div class="size-selector">
+                        <span class="size-label">Size:</span>
+                        <button class="size-opt active">S</button>
+                        <button class="size-opt">M</button>
+                        <button class="size-opt">L</button>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-plus"></i> ADD TO CART</button>
+                </div>
+            </div>
+
+            <!-- 🛍️ PRODUCT ITEM 3 -->
+            <div class="premium-card" data-id="z3" data-name="Minimalist Silk Blouse" data-price="210.00">
+                <div class="card-media">
+                    <img src="https://unsplash.com" alt="Minimalist Silk Blouse">
+                </div>
+                <div class="card-details">
+                    <h3 class="product-title">Minimalist Silk Blouse</h3>
+                    <p class="product-category">Tops</p>
+                    <p class="product-price">$210.00</p>
+                    
+                    <div class="size-selector">
+                        <span class="size-label">Size:</span>
+                        <button class="size-opt">S</button>
+                        <button class="size-opt active">M</button>
+                        <button class="size-opt">L</button>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-plus"></i> ADD TO CART</button>
+                </div>
+            </div>
+
+            <!-- 🛍️ PRODUCT ITEM 4 -->
+            <div class="premium-card" data-id="z4" data-name="Structured Leather Crossbody" data-price="295.00">
+                <div class="card-media">
+                    <img src="https://unsplash.com" alt="Structured Leather Crossbody">
+                    <span class="badge premium">LIMITED</span>
+                </div>
+                <div class="card-details">
+                    <h3 class="product-title">Structured Leather Crossbody</h3>
+                    <p class="product-category">Accessories</p>
+                    <p class="product-price">$295.00</p>
+                    
+                    <div class="size-selector">
+                        <span class="size-label">Size:</span>
+                        <button class="size-opt active">OS</button>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-plus"></i> ADD TO CART</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Slide-out Shopping Cart Drawer Panel -->
+    <div class="cart-drawer-overlay" id="cartDrawerOverlay"></div>
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-drawer-header">
+            <h3>YOUR SELECTIONS (<span id="cartHeaderCount">0</span>)</h3>
+            <button class="close-drawer" id="closeCartBtn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-drawer-body" id="cartItemsContainer">
+            <div class="empty-cart-msg">Your shopping bag is empty.</div>
+        </div>
+        <div class="cart-drawer-footer">
+            <div class="cart-total-row">
+                <span>ESTIMATED TOTAL</span>
+                <span id="cartTotalAmount">$0.00</span>
+            </div>
+            <button class="checkout-btn">PROCEED TO CHECKOUT</button>
+        </div>
+    </div>
+
+    <!-- Semantic Footer Section -->
+    <footer class="main-footer" id="contact">
+        <p>&copy; 2026 ZENN Luxury House. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+            
